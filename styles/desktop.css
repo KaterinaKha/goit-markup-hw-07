@@ -13,4 +13,17 @@
 	.hero-title {
 		margin-bottom: 48px;
 	}
+	.section {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+	.features {
+		padding-bottom: 0;
+	}
+	.section-list {
+		flex-wrap: nowrap;
+	}
+	.feature-list-icon {
+		display: block;
+	}
 }
