@@ -22,8 +22,25 @@
 	}
 	.section-list {
 		flex-wrap: nowrap;
+		gap: 24px;
 	}
 	.feature-list-icon {
-		display: block;
+		height: 112px;
+		margin-bottom: 8px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 24px 0;
+		background-color: var(--light);
+		background-position: center;
+		border-radius: 4px;
+	}
+	.item-title {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 1.2;
+	}
+	.item-description {
+		font-weight: 400;
 	}
 }
