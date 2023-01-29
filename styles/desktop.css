@@ -54,9 +54,16 @@
 	}
 	.footer-wrap {
 		flex-wrap: nowrap;
+		gap: 0;
+	}
+	.wrap {
+		width: 100%;
 	}
 	.footer-soc-wrap {
 		margin-left: 120px;
 		margin-right: 80px;
+	}
+	.footer-description {
+		width: 264px;
 	}
 }
