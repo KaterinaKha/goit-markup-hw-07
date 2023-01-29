@@ -25,6 +25,15 @@
 	.item-title {
 		text-align: left;
 	}
+	.customer-list {
+		column-gap: 24px;
+	}
+	.customer-item {
+		width: calc((100% - 24px * 2) / 3);
+	}
+	.customer-icon {
+		width: 104px;
+	}
 }
 
 @media screen and (max-width: 1199px) {

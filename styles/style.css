@@ -185,8 +185,9 @@ img {
 	background-color: var(--light);
 }
 .section-team .section-item {
-	width: 264px;
-	align-items: center;
+	max-width: 264px;
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	border-radius: 0px 0px 4px 4px;
 }
 .section-team .item-title {
 	font-weight: 500;
@@ -233,6 +234,38 @@ img {
 
 .team-soc-link-icon {
 	fill: var(--btn-color);
+}
+
+.customer-list {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 72px;
+	column-gap: 16px;
+}
+
+.customer-item {
+	width: calc((100% - 16px) / 2);
+	height: 88px;
+}
+
+.customer-link {
+	width: 100%;
+	height: 100%;
+	border: 1px solid var(--customers-icon);
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	fill: var(--customers-icon);
+	outline: transparent;
+
+	transition: border-color var(--transition), fill var(--transition);
+}
+
+.customer-link:hover,
+.customer-link:focus {
+	border-color: var(--btn-second-color);
+	fill: var(--btn-second-color);
 }
 
 /* -----Modal-----*/
