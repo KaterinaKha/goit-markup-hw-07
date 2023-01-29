@@ -268,7 +268,135 @@ img {
 	fill: var(--btn-second-color);
 }
 
-/* -----Modal-----*/
+/* FOOTER */
+
+.footer {
+	padding-top: 96px;
+	padding-bottom: 96px;
+	background-color: var(--logo-bgc);
+}
+.footer-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 72px;
+}
+
+.wrap {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer .logo {
+	padding: 0;
+}
+
+.footer-description {
+	margin-top: 16px;
+	width: 268px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--secondary-accent);
+}
+
+.footer .logo-studio {
+	color: var(--light);
+}
+
+.footer-title {
+	margin-bottom: 16px;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--accent-color);
+}
+
+.footer-soc-list {
+	display: flex;
+	gap: 16px;
+}
+
+.footer-soc-item {
+	width: 40px;
+	height: 40px;
+}
+.footer-soc-link {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	outline: transparent;
+
+	transition: background-color var(--transition);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+	background-color: var(--bg-footer-soc);
+}
+
+.footer-soc-link-icon {
+	fill: var(--btn-color);
+}
+
+.footer-form {
+	display: block;
+	width: 100%;
+}
+.footer-input {
+	width: 100%;
+	height: 40px;
+	padding-left: 16px;
+
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 0.04em;
+
+	color: rgba(255, 255, 255, 0.6);
+	background-color: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
+	outline: transparent;
+}
+
+.subscribe-btn {
+	display: flex;
+	margin: 16px auto 0;
+	min-width: 165px;
+	padding: 8px 24px;
+	align-items: center;
+	justify-content: space-between;
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+
+	color: var(--btn-text);
+	background: var(--primary-color);
+	border-radius: 4px;
+	border: transparent;
+	outline: transparent;
+	cursor: pointer;
+
+	transition: background-color var(--transition), box-shadow var(--transition);
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+	background-color: var(--btn-second-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* -----MODAL-----*/
 .backdrop {
 	position: fixed;
 	top: 0;
@@ -496,4 +624,98 @@ img {
 
 .filter {
 	padding-top: 96px;
+}
+.filter-list {
+	display: flex;
+	margin-bottom: 72px;
+	justify-content: center;
+}
+
+.filter-list .item-btn + .item-btn {
+	margin-left: 24px;
+}
+
+.filter-btn {
+	display: inline-block;
+
+	padding: 12px 24px;
+	min-width: 69px;
+	border-radius: 4px;
+	border: 1px solid var(--secondary-accent);
+
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+
+	color: var(--primary-color);
+	background-color: var(--btn-color);
+	outline: transparent;
+
+	cursor: pointer;
+
+	transition: border var(--transition), color var(--transition), background-color var(--transition),
+		box-shadow var(--transition);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+	border: 1px solid transparent;
+	color: var(--btn-text);
+	background-color: var(--primary-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 24px;
+	row-gap: 48px;
+}
+
+.portfolio-link {
+	display: block;
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+	outline: transparent;
+
+	transition: box-shadow var(--transition);
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio .card {
+	border: 1px solid var(--secondary-accent);
+	border-top: none;
+}
+
+.portfolio-overlay {
+	position: relative;
+	overflow: hidden;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 40px 32px;
+	background-color: var(--primary-color);
+	transform: translateY(100%);
+
+	transition: transform var(--transition);
+}
+
+.portfolio-link:hover .overlay,
+.portfolio-link:focus .overlay {
+	transform: translateY(0%);
+}
+
+.overlay-description {
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--btn-color);
 }

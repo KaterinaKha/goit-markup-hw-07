@@ -34,6 +34,32 @@
 	.customer-icon {
 		width: 104px;
 	}
+
+	.footer-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		column-gap: 24px;
+		justify-content: flex-start;
+		align-items: baseline;
+	}
+	.wrap {
+		display: flex;
+		width: 264px;
+		align-items: start;
+	}
+	.footer-form {
+		display: flex;
+		width: 453px;
+		height: 40px;
+		gap: 24px;
+	}
+	.footer-input {
+		width: 264px;
+	}
+	.subscribe-btn {
+		margin: 0;
+	}
 }
 
 @media screen and (max-width: 1199px) {

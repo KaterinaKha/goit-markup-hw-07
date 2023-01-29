@@ -3,6 +3,7 @@
 		max-width: 428px;
 	}
 }
+
 @media screen and (max-width: 767px) {
 	.section-list {
 		flex-direction: column;
