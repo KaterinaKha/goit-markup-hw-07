@@ -14,6 +14,9 @@
 		font-size: 56px;
 		line-height: 1.07;
 	}
+	.section-list {
+		column-gap: 24px;
+	}
 
 	.section-item {
 		width: calc((100% - 24px) / 2);
@@ -26,9 +29,11 @@
 
 @media screen and (max-width: 1199px) {
 	.section-list {
-		justify-content: space-between;
+		justify-content: center;
 	}
-
+	.features .item-description {
+		font-weight: 500;
+	}
 	.unvisible {
 		display: none;
 	}

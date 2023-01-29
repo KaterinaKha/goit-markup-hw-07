@@ -22,7 +22,6 @@
 	}
 	.section-list {
 		flex-wrap: nowrap;
-		gap: 24px;
 	}
 	.feature-list-icon {
 		height: 112px;
@@ -39,8 +38,5 @@
 		font-weight: 500;
 		font-size: 20px;
 		line-height: 1.2;
-	}
-	.item-description {
-		font-weight: 400;
 	}
 }

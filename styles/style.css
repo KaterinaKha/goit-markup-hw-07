@@ -75,6 +75,10 @@ img {
 	margin: 0 auto;
 }
 
+.card {
+	padding: 32px 16px;
+}
+
 /* -----HERO----- */
 .hero {
 	width: 100%;
@@ -143,6 +147,9 @@ img {
 	row-gap: 72px;
 }
 
+.filter {
+	padding-top: 96px;
+}
 .section-item {
 	width: 100%;
 	background-color: var(--accent-color);
@@ -168,34 +175,33 @@ img {
 	text-align: center;
 	color: var(--title-color);
 }
+
 .item-description {
-	font-weight: 500;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--main-color);
 }
-
-.section-title {
-	margin-bottom: 72px;
-	text-align: center;
-
-	font-size: 36px;
-	line-height: 1.11;
-	letter-spacing: 0.02em;
-	text-transform: capitalize;
-	color: var(--title-color);
-}
-
-.section.filter {
-	padding-top: 96px;
-}
-
-.section.section-team {
+.section-team {
 	background-color: var(--light);
 }
+.section-team .section-item {
+	width: 264px;
+	align-items: center;
+}
+.section-team .item-title {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	text-align: center;
+	color: var(--title-color);
+}
+.section-team .card {
+	text-align: center;
+}
+
 .team-soc-wrap {
 	margin-top: 8px;
-	padding: 4px 0;
 }
 
 .team-soc-list {
@@ -227,10 +233,6 @@ img {
 
 .team-soc-link-icon {
 	fill: var(--btn-color);
-}
-
-.section-item {
-	background-color: var(--accent-color);
 }
 
 /* -----Modal-----*/
@@ -455,4 +457,10 @@ img {
 .submit-btn:focus {
 	background-color: var(--btn-second-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* -----PORTFOLIO----- */
+
+.filter {
+	padding-top: 96px;
 }
