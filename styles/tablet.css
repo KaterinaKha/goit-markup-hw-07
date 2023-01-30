@@ -3,7 +3,8 @@
 		max-width: 768px;
 	}
 
-	.menu-open {
+	.menu-open,
+	.mob-menu {
 		display: none;
 	}
 

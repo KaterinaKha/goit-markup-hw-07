@@ -1,7 +1,4 @@
 @media screen and (min-width: 480px) {
-	.container {
-		max-width: 428px;
-	}
 	.head-nav {
 		padding: 24px;
 		justify-content: space-between;
