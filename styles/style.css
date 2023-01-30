@@ -113,6 +113,83 @@ img {
 .logo-studio {
 	color: var(--title-color);
 }
+.menu-open {
+	width: 32px;
+	height: 22px;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+.menu-open-icon {
+	stroke: var(--logo-bgc);
+}
+/* ---MOBILE_MENU---- */
+
+.mob-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--accent-color);
+}
+
+.menu-close {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-bottom: 16px;
+	width: 24px;
+	height: 24px;
+	color: #000;
+	background: var(--secondary-accent);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+	cursor: pointer;
+	transition: background-color var(--transition), fill var(--transition);
+}
+
+.menu-close:hover,
+.menu-close:focus {
+	background-color: var(--btn-second-color);
+	fill: var(--btn-text);
+	outline: transparent;
+}
+.mob-menu-nav {
+}
+
+.mob-menu-item:not(:last-child) {
+	margin-bottom: 40px;
+}
+
+.mob-menu-link {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.11;
+	letter-spacing: 0.02em;
+	text-transform: capitalize;
+	color: var(--title-color);
+}
+
+.mob-menu-auth {
+}
+.mob-menu-auth-link {
+}
+.mob-soc-list {
+}
+.mob-soc-item {
+}
+.mob-soc-link {
+}
+
+.mob-soc-link-icon {
+}
+
 /* -----HERO----- */
 .hero {
 	width: 100%;
