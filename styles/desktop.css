@@ -3,6 +3,17 @@
 		max-width: 1158px;
 	}
 
+	.main-nav {
+		margin-left: 76px;
+	}
+	.auth-nav {
+		flex-direction: row;
+		margin-left: auto;
+	}
+
+	.auth-nav .item + .item {
+		margin-left: 40px;
+	}
 	.hero {
 		max-width: 1440px;
 		height: 600px;
