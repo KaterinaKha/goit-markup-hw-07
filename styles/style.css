@@ -245,12 +245,16 @@ img {
 	padding-top: 112px;
 	padding-bottom: 112px;
 	background-color: var(--title-color);
-	background-image: var(--bg-gradient), url(../images/people-office.jpg);
+	background-image: var(--bg-gradient), url(../images/hero-bg-mob.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-
 	text-align: center;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+	.hero {
+		background-image: var(--bg-gradient), url(../images/hero-bg-mob-2x.jpg);
+	}
 }
 
 .hero-title {

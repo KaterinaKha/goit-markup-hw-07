@@ -74,6 +74,12 @@
 	.hero {
 		height: 436px;
 		padding-bottom: 108px;
+		background-image: var(--bg-gradient), url(../images/hero-bg-tabl.jpg);
+	}
+	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		.hero {
+			background-image: var(--bg-gradient), url(../images/hero-bg-tabl-2x.jpg);
+		}
 	}
 
 	.hero-title {
@@ -141,6 +147,6 @@
 		display: none;
 	}
 	.footer .container {
-		width: 582px;
+		max-width: 582px;
 	}
 }
