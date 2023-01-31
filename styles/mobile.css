@@ -1,13 +1,12 @@
 @media screen and (min-width: 480px) {
-	/* .head-nav {
-		padding: 24px;
-		justify-content: space-between;
-	} */
 }
 
 @media screen and (max-width: 767px) {
 	.section-list {
 		flex-direction: column;
 		align-items: center;
+	}
+	.section.section-team {
+		padding-bottom: 128px;
 	}
 }
