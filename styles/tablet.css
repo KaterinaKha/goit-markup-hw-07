@@ -91,7 +91,9 @@
 	.section-list {
 		column-gap: 24px;
 	}
-
+	.section-team .section-list {
+		row-gap: 64px;
+	}
 	.section-item {
 		width: calc((100% - 24px) / 2);
 	}
@@ -137,9 +139,13 @@
 }
 
 @media screen and (max-width: 1199px) {
+	.section.section-team {
+		padding-bottom: 104px;
+	}
 	.section-list {
 		justify-content: center;
 	}
+
 	.features .item-description {
 		font-weight: 500;
 	}
