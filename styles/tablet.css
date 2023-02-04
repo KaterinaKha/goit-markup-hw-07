@@ -152,6 +152,19 @@
 		padding: 12px 24px;
 		min-width: 69px;
 	}
+
+	.portfolio {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		row-gap: 72px;
+	}
+	.portfolio img {
+		height: auto;
+	}
+	.portfolio-list {
+		max-width: calc((100% - 24px) / 2);
+	}
 }
 
 @media screen and (max-width: 1199px) {
@@ -161,15 +174,15 @@
 	.section-list {
 		justify-content: center;
 	}
+	.section-list.portfolio {
+		justify-content: start;
+	}
 
 	.features .item-description {
 		font-weight: 500;
 	}
 	.unvisible {
 		display: none;
-	}
-	.filter-list {
-		max-width: 380px;
 	}
 	.footer .container {
 		max-width: 582px;

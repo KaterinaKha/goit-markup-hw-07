@@ -9,4 +9,7 @@
 	.section.section-team {
 		padding-bottom: 128px;
 	}
+	.filter-list {
+		max-width: 380px;
+	}
 }
