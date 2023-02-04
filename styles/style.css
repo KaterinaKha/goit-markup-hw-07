@@ -787,6 +787,7 @@ img {
 
 .filter {
 	padding-top: 48px;
+	padding-bottom: 48px;
 }
 .filter-list {
 	display: flex;
